@@ -1,4 +1,6 @@
 import * as React from "react";
+import { IoLogoLinkedin } from "react-icons/io";
+import { SiGmail } from "react-icons/si";
 
 // styles
 const pageStyles = {
@@ -8,14 +10,14 @@ const pageStyles = {
 };
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64,
+  marginBottom: 50,
   maxWidth: 320,
 };
 const headingAccentStyles = {
   color: "#663399",
 };
 const paragraphStyles = {
-  marginBottom: 48,
+  marginBottom: 20,
   color: "#333",
 };
 
@@ -34,19 +36,27 @@ const IndexPage = () => {
         Welcome,
         <br />
         <span style={headingAccentStyles}>
-          — currently the site is under construction{" "}
+          — currently the site is under construction.
         </span>
       </h1>
       <article>
         <div className={paragraphStyles}>
           <p>
-            If you need to, please{" "}
-            <a style={linkStyle} href="mailto:gmongalo90@gmail.com">
-              reach out
-            </a>
-            !
+            Feel free to reach out in the meanwhile.
+            <br />
           </p>
+          <span> — Gabriel M.</span>
         </div>
+        <br />
+        <a
+          style={linkStyle}
+          href="https://www.linkedin.com/in/gabriel-mongalo-939119a0/"
+        >
+          <IoLogoLinkedin size="30px" />
+        </a>{" "}
+        <a style={linkStyle} href="mailto:gmongalo90@gmail.com">
+          <SiGmail size="30px" />
+        </a>
       </article>
     </main>
   );
